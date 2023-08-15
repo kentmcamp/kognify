@@ -144,6 +144,9 @@ p {
     padding: 0.5em 0em;
     border-bottom: #c8d7dc solid 0.1rem;
 }
+.audio-card:last-child {
+    border-bottom: none;
+}
 
 .audio-image {
     display: flex;
@@ -155,24 +158,10 @@ p {
     width: 5em;
     height: 5em;
     border: #c8d7dc solid 1px;
-    border-radius: 10px;
+    border-radius: 50%;
+    border-radius: 1em;
     box-shadow: 0 0 5px rgba(1, 1, 1, .25);
 }
-
-/* .bi-play-circle {
-    position: absolute;
-    font-size: 4em;
-    margin: 0.15em 0em 0em 0em;
-    cursor: pointer;
-    color: white;
-    opacity: 0.7;
-
-}
-.bi-play-circle:hover {
-    scale: 1.1;
-    opacity: 1;
-} */
-
 
 
 .audio-description {
@@ -221,4 +210,16 @@ h3 {
     font-style: italic;
     font-weight: 400;
     color: #666666;
+}
+
+
+.controls > button {
+    position: absolute;
+    border: 0;
+    background: transparent;
+}
+.controls > button > .bi {
+    font-size: 5em;
+    color: white;
+    cursor: pointer;
 }
