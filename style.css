@@ -4,7 +4,7 @@
 h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: 2.2em;
-    color: #444444
+    color: #666666
 }
 p {
     font-family: 'Noto Sans', sans-serif;
@@ -14,7 +14,7 @@ p {
 }
 body {
     margin-top: 5.5em;
-    background: linear-gradient(180deg, #c5cbce, #e3eaed, #a9afaf);
+    background: linear-gradient(180deg, #f2f5f6 0%,#e3eaed 50%);
 }
 header {
     background: linear-gradient(to right, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
@@ -36,16 +36,18 @@ header {
     min-width: 100vw;
     overflow: hidden;
 }
-.bi-yin-yang {
+.bi {
+    color: #666666;
     font-size: 2.5em;
-    color: #444444;
-    margin-right: 0.5em;
-    transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
-.bi-yin-yang:hover {
-    transform: scale(1.3);
-    font-size: 2.7em;
+.bi-list {
+    color: #666666;
+    font-size: 2.5em;
+    margin: 0.3em;
+    cursor: pointer;
+}
+.bi-list:hover {
     color: #fff;
 }
 .navbar {
@@ -81,10 +83,19 @@ header {
 }
 .navbar li:hover {
     background-color: #666666;
-    color: #c8d7dc;
+    border: #f2f5f6 solid 1px;
+    color: #f2f5f6;
     transform: scale(1.1);
     cursor: pointer;
 }
+.navbar li > .bi {
+    font-size: 1.5em;
+}
+.navbar li:hover .bi {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
 a {
     text-decoration: none;
     color: #444444;
@@ -115,4 +126,99 @@ p {
     border-bottom: #c8d7dc solid 0.1rem;
     border-radius: 0.5em 0.5em 0em 0em;
     padding: 0.5em 1em;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.audio-card {
+    display: flex;
+    align-items: center;
+    margin: .1em 0em;
+    margin-right: 0.5em;
+    padding: 0.5em 0em;
+    border-bottom: #c8d7dc solid 0.1rem;
+}
+
+.audio-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+}
+.lesson-avatar {
+    width: 5em;
+    height: 5em;
+    border: #c8d7dc solid 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(1, 1, 1, .25);
+}
+
+/* .bi-play-circle {
+    position: absolute;
+    font-size: 4em;
+    margin: 0.15em 0em 0em 0em;
+    cursor: pointer;
+    color: white;
+    opacity: 0.7;
+
+}
+.bi-play-circle:hover {
+    scale: 1.1;
+    opacity: 1;
+} */
+
+
+
+.audio-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0em 0em 0em 0.3em;
+}
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #666666;
+    margin: 0em;
+}
+.audio-description > p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: .9em;
+    font-weight: 400;
+    color: #666666;
+    margin: 0.5em 0em;
+}
+.lesson-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.audio-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0em 0.5em;
+}
+.audio-info>em {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #666666;
+    margin: 0em 0.3em;
+}
+.audio-info>sub {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: 400;
+    color: #666666;
 }
